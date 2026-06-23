@@ -51,11 +51,6 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-<<<<<<< HEAD
-          app-name: urakka-frontend
-          slot-name: Production
-=======
           app-name: 'urakka-frontend'
->>>>>>> 45c6d37b48b30fb598e167214e4c5c449f4ad80c
           package: .
           publish-profile: ${{ secrets.AZURE_FRONTEND_PUBLISH_PROFILE }}
